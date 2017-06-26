@@ -6,23 +6,12 @@ function updateContent(ev) {
     const color = form.personColor.value
 
     console.log(name, age, color)
-
     updateStats(name, age, color)
-}
-
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
 }
 
 function updateStats(name, age, color) {
     const statsBox = document.querySelector('#personStats')
     statsBox.innerHTML += name + " " + age+ "<br>"
-    // statsBox.style.background = getRandomColor();
     statsBox.style.background = color;
 }
 
