@@ -1,0 +1,7 @@
+* {
+    /*border: 1px solid red;*/
+}
+#inputContainer, #statsContainer {
+    width: 50%;
+    margin: 5px auto 0px;
+}

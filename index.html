@@ -6,19 +6,32 @@
     <title>Person Stats</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css"/>
+    
 </head>
 <body>
-    <h1>Person Stats</h1>
-    <form id="personForm">
-        <p>
-            <label for="personName">Name</label>
-            <input type="text" name="personName">
-        </p>
-        <button type="submit">Go</button>
-    </form>
+    <div id="inputContainer">
+        <h1>Person Stats</h1>
+        <form id="personForm">
+            <p>
+                <label for="personName">Name</label>
+                <input id="personNameInput" type="text" name="personName">
+            </p>
+            <p>
+                <label for="personAge">Age</label>
+                <input id="personAgeInput" type="text" name="personAge">
+            </p>
+            <p>
+                <label for="personAge">Color</label>
+                <input id="personColorInput" type="text" name="personColor">
+            </p>
+            <button type="submit">Go</button>
+        </form>
+    </div>
 
-    <div id="stats">
-        
+    <div id="statsContainer">
+        <h1 id="statsHeader">Stats</h1>
+        <p id="personStats"></p>
     </div>
 
     <script src="index.js"></script>
