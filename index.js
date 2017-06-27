@@ -10,13 +10,27 @@ function updateContent(ev) {
 }
 
 function updateStats(name, age, color) {
-  const statsBox = document.querySelector('#personStats')
-  const p = document.createElement('p')
+  //select stats container
+  const statsBox = document.querySelector('#statsContainer')
 
-  p.textContent = `Name: ${name} Age: ${age} Color: ${color}`
-  p.style.color = color
+  //create list
+  const list = document.createElement('ul')
 
-  statsBox.appendChild(p)
+  const nameItem = document.createElement('li')
+  nameItem.textContent = `Name: ${name}`
+  list.appendChild(nameItem)
+
+  const ageItem = document.createElement('li')
+  ageItem.textContent = `Age: ${age}`
+  list.appendChild(ageItem)
+
+  const colorItem = document.createElement('li')
+  colorItem.textContent = `Color: ${color}`
+  list.style.color = color
+  list.appendChild(colorItem)
+
+  // append list to stats container
+  statsBox.appendChild(list)
 }
 
 const personForm  = document.querySelector('#personForm')
