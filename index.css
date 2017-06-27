@@ -1,14 +1,45 @@
-/** {
-    border: 1px solid red;
+body, * {
+    background: #494e56;
+    color: white;
 }
-
 #inputContainer, #statsContainer {
     width: 50%;
-    margin: 5px auto 0px;
-}*/
-* {
-    /*border: 3px solid red;*/
+    margin: auto;
 }
-body {
-    padding: 1rem;
+
+/*form stuff*/
+h1 {
+    letter-spacing: 3px;
+}
+label {
+    color: white;
+}
+input[type=text]:focus, input[type=number]:focus, input[type=color]:focus {
+    border: 3px solid #555;
+}
+
+/*button stuff*/
+#submitButton{
+    cursor:pointer;
+    width:20%;
+    padding: 15px 10px;
+    margin: 10px 40%;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+#submitButton:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#submitButton:focus {
+    outline: 0;
+}
+
+/*list stuff*/
+ul {
+  list-style-type: none;
+  transition: visibility 0s;
+  transition: opacity 2s linear;
+}
+ul:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
