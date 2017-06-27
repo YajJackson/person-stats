@@ -12,7 +12,7 @@ function updateContent(ev) {
 function updateStats(name, age, color) {
     const statsBox = document.querySelector('#personStats')
     statsBox.innerHTML += name + " " + age+ "<br>"
-    statsBox.style.background = color;
+    document.querySelector('#statsContainer').style.color = color;
 }
 
 const personForm  = document.querySelector('#personForm')
