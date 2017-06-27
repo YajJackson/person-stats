@@ -13,7 +13,7 @@ function updateStats(name, age, color) {
   const statsBox = document.querySelector('#personStats')
   const p = document.createElement('p')
 
-  p.textContent = `Name: ${name}, Age: ${age}, Color: ${color}`
+  p.textContent = `Name: ${name} Age: ${age} Color: ${color}`
   p.style.color = color
 
   statsBox.appendChild(p)
